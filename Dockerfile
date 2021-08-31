@@ -40,6 +40,8 @@ COPY requirements.txt /code/
 
 RUN pip3 install -r requirements.txt --no-cache-dir
 
+RUN sed -i '1i openssl_conf = default_conf' /etc/ssl/openssl.cnf && echo -e "\n[ default_conf ]\nssl_conf = ssl_sect\n[ssl_sect]\nsystem_default = system_default_sect\n[system_default_sect]\nMinProtocol = TLSv1\nCipherString = DEFAULT:@SECLEVEL=1" >> /etc/ssl/openssl.cnf
+
 COPY . /code/
 
 
