@@ -77,9 +77,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': "Riesgos",
-        'HOST': "192.168.87.31\SVRMSSQL",
-        'USER': "usrpanbox",
-        'PASSWORD': "panbox123",
+        'HOST': "192.168.87.57\SVRSQLPANBOX",
+        'USER': "sa",
+        'PASSWORD': "panbox123@",
         'PORT': "1433",
         'OPTIONS': {
             'driver':'ODBC Driver 17 for SQL Server',
