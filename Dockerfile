@@ -26,7 +26,7 @@ RUN /bin/bash -c "source ~/.bashrc"
 
 RUN apt-get -y install locales
 RUN locale-gen en_US.UTF-8
-RUN update-locale LANG=en_US.UTF-8
+
 
 
 RUN mkdir /code
