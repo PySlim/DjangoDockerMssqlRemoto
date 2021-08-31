@@ -80,7 +80,7 @@ DATABASES = {
         'HOST': "192.168.87.31\SVRMSSQL",
         'USER': "usrpanbox",
         'PASSWORD': "panbox123",
-        'PORT': "",
+        'PORT': "1433",
         'OPTIONS': {
             'driver':'ODBC Driver 17 for SQL Server',
             },
